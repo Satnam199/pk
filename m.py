@@ -250,23 +250,183 @@
 #     print('\n')      
 
 
-def calculator(a,b,op):
+# def calculator(a,b,op):
 
-    if op=='+':
-        return(' sum is ',(a+b))
-    elif op=='-':
-        return('subtraction is',(a-b)) 
-    elif op=='*':
-        return('multiply is ',(a*b))
-    elif op=="/":
-        return('division is ',(a/b))
-    elif op=='**':
-        return('power is ',(a**b))    
-if __name__== '__main__':
-    x=int(input('enter a number a : '))
-    y=int(input('enter a number b : '))
-    z=input('enter a operation op : ')                   
-    print(calculator(x,y,z))  
+#     if op=='+':
+#         return(' sum is ',(a+b))
+#     elif op=='-':
+#         return('subtraction is',(a-b)) 
+#     elif op=='*':
+#         return('multiply is ',(a*b))
+#     elif op=="/":
+#         return('division is ',(a/b))
+#     elif op=='**':
+#         return('power is ',(a**b))    
+# if __name__== '__main__':
+#     x=int(input('enter a number a : '))
+#     y=int(input('enter a number b : '))
+#     z=input('enter a operation op : ')                   
+#     print(calculator(x,y,z))  
+
+# import pywhatkit as kit
+
+# kit.sendwhatmsg('+919653077333','helo',19,3)
+
+# kit.playonyt('python')
+
+
+# a=int(input('enter a number a : '))
+# b=int(input('enter of number b : '))
+# if a>b:
+#     print('a is maximum ')
+# elif a==b:
+#     print('a and b are equal')
+
+# else:
+#     print('b is maximum')
+
+# a=int(input('enter a number :'))
+# sum=0
+# temp=a
+
+
+# power=len(str(a))
+
+
+# while a>0:
+#     # var=temp%10
+#     # print(sum)
+#     sum=sum+(a%10)**power
+    
+    
+#     a=a//10
+    
+# print(sum)
+
+
+# if temp==sum:
+#     print('it is armstron')
+# else:
+#     print('not armstrong')    
+    
+# from textblob import TextBlob
+
+# # incorrect_words=['goodd','spellinngs','havee']
+# incorrect=[input('enter a words:')]
+
+# correct_words=[]
+
+# for i in incorrect:
+#     correct_words.append(TextBlob(i))
+# for j in correct_words:
+#     print(j.correct())    
+  
+
+
+# class Class():
+#     student=10
+#     teacher=1
+#     def tech(self):
+#         print('python')
+# object1=Class()
+# print(object1.student)
+# object2=Class()
+
+# print(object2.teacher)
+
+
+# class Institute:
+#     def __init__(self,students,subject):
+#         self.a=students
+#         self.b=subject
+
+#     def tech(self):
+#         print(f'this institute have {self.a} student and it teaches {self.b}')
+
+#     def tech(self):
+#         print('python')    
+        
+# x=Institute(10,'data structure')
+# # print(x.a)    
+# print(x.tech())
+
+
+
+# class laptop():
+#     def __init__(self,weight,color,ram):
+#         self.a=weight
+#         self.b=color
+#         self.c=ram
+#     def typing_speed(self,speed):
+#         print(f'keyboard speed is {speed}')
+
+# o1=laptop(5,'red',8)
+# print(o1.b)
+# print(o1.typing_speed(35))
+
+
+# class Car():
+#     def __init__(self,color,weight,seats):
+#         self.a=color 
+#         self.b=weight
+#         self.c=seats
+#     def average(self,average):
+#         print(f'average of car is {14}')
+
+# o1=Car('brown',70,8)
+# print(o1.c)
+
+
+# class student:
+
+#     def __init__(self,name,roll):
+#         self.a=name
+#         self.b=roll
+#         self.c='dotalgo'
+#     def update(self):
+#         self.a='abc'
+
+# a1=student('satnam',12)
+# print(a1.c)
+# a1.update()
+# print(a1.a)
+   
+   
+   
+   
+    # def marks(abc,marks):
+    #     print('the marks of' + abc.a + 'is' +str(marks))
+
+# o1=student('sat',12)
+# o1.marks(70)
+
+
+class student():
+    def __init__(self,name,roll):
+        self.a=name
+        self.b=roll
+    def marks(self,marks):
+        print(self.a + str(marks))
+
+# class coder(student):
+#     pass
+
+class coder(student):
+    def __init__(self,name,roll,coder_id):
+        student.__init__(self,name,roll)
+        self.coder_id=coder_id
+
+s1=coder('abc',101,'sa101')
+print(s1.coder_id) 
+s1.marks(80)
+
+# o1=coder('abc',101)
+# print(o1.b)
+# o1.marks(100)
+
+
+
+
 
 
 
